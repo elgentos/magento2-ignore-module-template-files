@@ -1,0 +1,22 @@
+{
+    "name": "elgentos/ignore-module-template-files",
+    "description": "Ignore all module template files and layouts",
+    "type": "magento2-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Elgentos\\IgnoreModuleTemplateFiles\\": "src/"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jeroen Boersma",
+            "email": "jeroen@elgentos.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
