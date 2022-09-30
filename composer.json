@@ -1,5 +1,5 @@
 {
-    "name": "elgentos/ignore-module-template-files",
+    "name": "elgentos/magento2-ignore-module-template-files",
     "description": "Ignore all module template files and layouts",
     "type": "magento2-plugin",
     "license": "MIT",
