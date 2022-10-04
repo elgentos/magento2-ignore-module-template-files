@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<!--    <type name="Magento\Framework\View\File\Collector\Override\Base">-->
+<!--        <plugin name="elgentos-ignore-overrides-base" type="Elgentos\IgnoreModuleTemplateFiles\Plugin\ResolveNoFiles" />-->
+<!--    </type>-->
+<!--    <type name="Magento\Framework\View\File\Collector\Override\ThemeModular">-->
+<!--        <plugin name="elgentos-ignore-overrides-theme-modular" type="Elgentos\IgnoreModuleTemplateFiles\Plugin\ResolveNoFiles" />-->
+<!--    </type>-->
+    <preference for="Magento\Framework\View\Design\Fallback\RulePool"
+                type="Elgentos\IgnoreModuleTemplateFiles\View\Design\Fallback\RulePool"/>
+    <preference for="Magento\Framework\View\Layout\File\Collector\Aggregated"
+                type="Elgentos\IgnoreModuleTemplateFiles\View\Layout\File\Collector\Aggregated"/>
+</config>
