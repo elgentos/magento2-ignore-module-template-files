@@ -8,6 +8,9 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Framework\View\Design\Fallback\RulePool"
                 type="Elgentos\IgnoreModuleTemplateFiles\View\Design\Fallback\RulePool"/>
-    <preference for="Magento\Framework\View\Layout\File\Collector\Aggregated"
-                type="Elgentos\IgnoreModuleTemplateFiles\View\Layout\File\Collector\Aggregated"/>
+
+    <type name="Magento\Framework\View\Layout\File\Collector\Aggregated">
+        <plugin name="elgentos-ignore-module-template-layout-aggregated"
+                type="Elgentos\IgnoreModuleTemplateFiles\Plugin\Layout\File\Collector\Aggregated" />
+    </type>
 </config>
